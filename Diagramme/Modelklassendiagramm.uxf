@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>140</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Merkmal
+-
++Date Datum
++Integer Wert
++ENUM Typ
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>330</y>
+      <w>190</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Spieler
+-
++Date Geburtstag
++String Name
++String Notiz
++String Telefonnummer
++Boolean IstFrau
++Adresse Adresse
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>340</y>
+      <w>190</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Trainer
+-
++String Name
++String EMailAdresse
++String Passwort
++ENUM Lizenz
++Date Geburtsdatum
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>600</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Team
+-
++String Name
++ENUM Alterklasse
++ENUM Liga
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>600</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Übung
+-
++String Name
++ENUM Kategorie
++ENUM[] Schwerpunkt
++Integer MinimaleTeilnehmer
++Boolean IstOeffentlich
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>810</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Übungselement
+-
++ENUM Typ
++Position Position
++Vektor RichtungLaenge
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>340</y>
+      <w>190</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Adresse
+-
+...
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>400</y>
+      <w>110</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>400</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=n
+m2=m</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>470</y>
+      <w>40</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>m1=n
+m2=m</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>720</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>m1=n
+m2=m</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>460</y>
+      <w>70</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>m1=m
+m2=1
+erstellt</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>170</y>
+      <w>160</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=m
+gehört</panel_attributes>
+    <additional_attributes>100.0;160.0;100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>160</y>
+      <w>120</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>m1=m
+m2=1
+erzeugt</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>450</y>
+      <w>230</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>m1=n
+m2=m</panel_attributes>
+    <additional_attributes>210.0;150.0;210.0;100.0;80.0;100.0;80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

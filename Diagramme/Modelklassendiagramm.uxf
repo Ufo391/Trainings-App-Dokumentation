@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>140</y>
-      <w>190</w>
-      <h>100</h>
+      <x>270</x>
+      <y>90</y>
+      <w>171</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>Merkmal
 -
 +Date Datum
 +Integer Wert
 +ENUM Typ
++Trainer Ersteller
++Spieler Spieler
 -
 </panel_attributes>
     <additional_attributes/>
@@ -21,18 +23,18 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>330</y>
-      <w>190</w>
-      <h>150</h>
+      <x>522</x>
+      <y>270</y>
+      <w>171</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Spieler
 -
 +Date Geburtstag
 +String Name
 +String Notiz
-+String Telefonnummer
 +Boolean IstFrau
++List&lt;Team&gt; Teams
 +Adresse Adresse
 -
 </panel_attributes>
@@ -41,10 +43,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
-      <y>340</y>
-      <w>190</w>
-      <h>130</h>
+      <x>36</x>
+      <y>270</y>
+      <w>171</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>Trainer
 -
@@ -52,7 +54,8 @@
 +String EMailAdresse
 +String Passwort
 +ENUM Lizenz
-+Date Geburtsdatum
++Date Geburtstag
++List&lt;Team&gt; Teams
 -
 </panel_attributes>
     <additional_attributes/>
@@ -60,16 +63,18 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>600</y>
-      <w>190</w>
-      <h>100</h>
+      <x>279</x>
+      <y>270</y>
+      <w>171</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>Team
 -
 +String Name
 +ENUM Alterklasse
 +ENUM Liga
++List&lt;Spieler&gt; Spieler
++List&lt;Trainer&gt; Trainer
 -
 </panel_attributes>
     <additional_attributes/>
@@ -77,18 +82,19 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>600</y>
-      <w>210</w>
-      <h>130</h>
+      <x>18</x>
+      <y>504</y>
+      <w>189</w>
+      <h>135</h>
     </coordinates>
-    <panel_attributes>Übung
+    <panel_attributes>Uebung
 -
 +String Name
 +ENUM Kategorie
 +ENUM[] Schwerpunkt
 +Integer MinimaleTeilnehmer
 +Boolean IstOeffentlich
++Trainer Ersteller
 -
 </panel_attributes>
     <additional_attributes/>
@@ -96,16 +102,17 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>810</y>
-      <w>210</w>
-      <h>100</h>
+      <x>18</x>
+      <y>720</y>
+      <w>189</w>
+      <h>108</h>
     </coordinates>
-    <panel_attributes>Übungselement
+    <panel_attributes>Uebungselement
 -
 +ENUM Typ
 +Position Position
 +Vektor RichtungLaenge
++Uebung Uebung
 -
 </panel_attributes>
     <additional_attributes/>
@@ -113,14 +120,18 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>820</x>
-      <y>340</y>
-      <w>190</w>
-      <h>120</h>
+      <x>756</x>
+      <y>270</y>
+      <w>171</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Adresse
 -
-...
++String Strassenname
++String Hausnummer
++Integer Postleitzahl
++String Ort
++String Telefonnummer
 -
 </panel_attributes>
     <additional_attributes/>
@@ -128,100 +139,95 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>730</x>
-      <y>400</y>
-      <w>110</w>
-      <h>40</h>
+      <x>684</x>
+      <y>333</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>m1=1
+    <panel_attributes>lt=&lt;-
+m1=1
 m2=1</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>400</y>
-      <w>190</w>
-      <h>40</h>
+      <x>441</x>
+      <y>333</y>
+      <w>99</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>m1=n
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
 m2=m</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>470</y>
-      <w>40</w>
-      <h>150</h>
+      <x>108</x>
+      <y>630</y>
+      <w>36</w>
+      <h>108</h>
     </coordinates>
-    <panel_attributes>m1=n
+    <panel_attributes>lt=&lt;-
+m1=1
 m2=m</panel_attributes>
-    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>720</y>
-      <w>40</w>
-      <h>110</h>
+      <x>108</x>
+      <y>396</y>
+      <w>63</w>
+      <h>126</h>
     </coordinates>
-    <panel_attributes>m1=n
-m2=m</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>280</x>
-      <y>460</y>
-      <w>70</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>m1=m
+    <panel_attributes>lt=-&gt;
+m1=m
 m2=1
 erstellt</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>170</y>
-      <w>160</w>
-      <h>180</h>
+      <x>432</x>
+      <y>117</y>
+      <w>234</w>
+      <h>171</h>
     </coordinates>
-    <panel_attributes>m1=1
+    <panel_attributes>lt=&lt;-
+m1=1
 m2=m
 gehört</panel_attributes>
-    <additional_attributes>100.0;160.0;100.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;170.0;200.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>160</y>
-      <w>120</w>
-      <h>200</h>
+      <x>108</x>
+      <y>108</y>
+      <w>180</w>
+      <h>180</h>
     </coordinates>
-    <panel_attributes>m1=m
+    <panel_attributes>lt=-&gt;
+m1=m
 m2=1
 erzeugt</panel_attributes>
-    <additional_attributes>100.0;20.0;10.0;20.0;10.0;180.0</additional_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0;10.0;180.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>450</y>
-      <w>230</w>
-      <h>170</h>
+      <x>198</x>
+      <y>333</y>
+      <w>99</w>
+      <h>36</h>
     </coordinates>
-    <panel_attributes>m1=n
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
 m2=m</panel_attributes>
-    <additional_attributes>210.0;150.0;210.0;100.0;80.0;100.0;80.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

@@ -167,19 +167,19 @@ Prüfbarkeit |-|-|X|-
 
 ## 3.3 Schnittstellen
     - Schnittstellenbeschreibung
-    - Auflistung der nach auяen sichtbaren Schnittstelle der Softwarebausteine
+    - Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
 
 ## 3.4 Datenmodell 
-    - Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomдne)
+    - Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomäne)
     - Modellierung des physikalischen Datenmodells 
       - RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
 ## 3.5 Abläufe
-    - Aktivitдtsdiagramme fьr relevante Use Cases
-    - Aktivitдtsdiagramm fьr den Ablauf sдmtlicher Use Cases
+    - Aktivitätsdiagramme für relevante Use Cases
+    - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
 ## 3.6 Entwurf
-    - Detaillierte UML-Diagramme fьr relevante Softwarebausteine
+    - Detaillierte UML-Diagramme für relevante Softwarebausteine
 
 # 4 Projektorganisation
 

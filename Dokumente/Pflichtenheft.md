@@ -181,6 +181,119 @@ Prüfbarkeit |-|-|X|-
 ## 3.6 Entwurf
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
 
+### Enums
+
+__Merkmal.Typ__
+
+- Größe
+- Gewicht
+- Schusskraft
+- Schusstechnick
+- Rechter Fuß
+- Linker Fuß
+- Angriffskopfball
+- Verteidigungskopfball
+- Kurzpassspiel
+- Langpassspiel
+- Flanken
+- 1vs1 - Verteidigung
+- 1vs1 - Angriff
+- Taktisches Verhalten - Angriff
+- Taktisches Verhalten - Verteidigung
+- Ballan- und mitnahme
+- Dribbeltempo
+- Torwartspiel - Strafraum
+- Torwartspiel - Hechten linke Seite
+- Torwartspiel - Hechten rechte Seite
+- Torwartspiel - Fangen
+- Torwartspiel - Fausten
+- Torwartspiel - Abstoss
+- Torwartspiel  - Abschlag
+- Torwartspiel - Werfen
+
+__Trainer.Lizenz__
+
+- C-Lizenz
+- B-Lizenz
+- A-Lizenz
+- UEFA-Jugendcoach
+- Fußballlehrer
+
+__Uebung.Kategorie__
+
+- Aufwärmen
+- Spielform
+- Passübung
+- Dribbelübung
+- Koordination
+- Kondition
+- Torschuss
+- Kraftübung
+
+__Übung.Schwerpunkt__
+
+- Passspiel
+- Ballan - mitnahme
+- Torschuss
+- 1vs1 - Angriff
+- 1vs1- Verteidigung
+- Überzahl Angriff
+- Überzahl Vertiedigung
+- Unterzahl Angriff
+- Unterzahl Verteidigung
+- Taktik
+- Flanken
+
+__Uebungselement.Typ__
+
+- Ball
+- Hütchen
+- Tor
+- Spieler
+- Torwart
+- gestrichelter Pfeil
+- durchgezogener Pfeil
+- geschwungener Pfeil
+- Stange
+- Hürde
+
+__Team.Altersklasse__
+
+- U5
+- U6
+- U7
+- U8
+- U9
+- U10
+- U11
+- U12
+- U13
+- U14
+- U15
+- U16
+- U17
+- U18
+- U19
+- U21
+- Herren
+- Damen
+- Ü32
+- Ü40
+- Ü50
+
+__Team.Liga__
+
+- Kreisliga
+- Kreisklasse
+- Bezirksliga
+- Landesliga
+- Verbandsliga
+- Oberliga
+- Regionalliga
+- 3. Bundesliga
+- 2. Bundesliga
+- 1. Bundesliga
+
 # 4 Projektorganisation
 
 ## 4.1 Annahmen

@@ -48,15 +48,15 @@ Die Anwendung soll sich an Fußballtrainer richten. Diese sind über alle Alters
 
 ### Teammanager
 
-![Use Case Teammanager](UCTeammanager.png)
+![Use Case Teammanager](../Diagramme/UseCases/UCTeammanager.png)
 
 ### Trainingplaner
 
-![Use Case Trainingsplaner](UCTrainingsplaner.png)
+![Use Case Trainingsplaner](../Diagramme/UseCases/UCTrainingsplaner.png)
 
 ### Training
 
-![Use Case Training](UCTraining.png)
+![Use Case Training](../Diagramme/UseCases/UCTraining.png)
 
 ## 2.3 Nicht-funktionale Anforderungen 
 

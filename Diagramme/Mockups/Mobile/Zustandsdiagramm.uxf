@@ -99,11 +99,11 @@
       <x>950</x>
       <y>300</y>
       <w>120</w>
-      <h>100</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [Mannschaft X]</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -121,7 +121,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>820</x>
-      <y>380</y>
+      <y>430</y>
       <w>160</w>
       <h>40</h>
     </coordinates>
@@ -132,7 +132,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>820</x>
-      <y>510</y>
+      <y>560</y>
       <w>160</w>
       <h>40</h>
     </coordinates>
@@ -143,7 +143,7 @@
     <id>Relation</id>
     <coordinates>
       <x>960</x>
-      <y>410</y>
+      <y>460</y>
       <w>170</w>
       <h>120</h>
     </coordinates>
@@ -155,7 +155,7 @@ Gerät wird 90° gedreht</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>820</x>
-      <y>410</y>
+      <y>460</y>
       <w>130</w>
       <h>120</h>
     </coordinates>
@@ -166,8 +166,8 @@ Gerät 90° zurück</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>460</x>
-      <y>630</y>
+      <x>1170</x>
+      <y>430</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
@@ -177,20 +177,20 @@ Gerät 90° zurück</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>530</y>
-      <w>130</w>
-      <h>120</h>
+      <x>970</x>
+      <y>410</y>
+      <w>220</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [Trainingsplaner]</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>460</x>
-      <y>760</y>
+      <x>1170</x>
+      <y>560</y>
       <w>140</w>
       <h>40</h>
     </coordinates>
@@ -200,8 +200,8 @@ Gerät 90° zurück</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>660</y>
+      <x>1170</x>
+      <y>460</y>
       <w>130</w>
       <h>120</h>
     </coordinates>
@@ -212,8 +212,8 @@ Gerät 90° zurück</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>660</y>
+      <x>1290</x>
+      <y>460</y>
       <w>170</w>
       <h>120</h>
     </coordinates>
@@ -224,25 +224,37 @@ Gerät wird 90° gedreht</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1230</x>
-      <y>610</y>
+      <x>830</x>
+      <y>300</y>
       <w>120</w>
-      <h>120</h>
+      <h>150</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=-&gt;
 [Mannschaften]</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
-      <y>300</y>
-      <w>120</w>
-      <h>100</h>
+      <x>970</x>
+      <y>440</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+[Überblick]</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>280</y>
+      <w>400</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-[Mannschaft X]</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+[Mannschaften]</panel_attributes>
+    <additional_attributes>290.0;150.0;290.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

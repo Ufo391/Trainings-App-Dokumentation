@@ -100,7 +100,76 @@ Prüfbarkeit |-|-|X|-
     - Unter den Screens darstellen (bzw. verlinken), welche User Stories mit dem Screen abgehandelt werden
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
 
+### Web
+
+#### Login
+
+![Login](./../Diagramme/Mockups/Login.png)
+
+#### Register
+
+![Login](./../Diagramme/Mockups/Register.png)
+
+#### Home Mannschaften
+
+![Login](./../Diagramme/Mockups/Home - Mannschaft.png)
+
+#### Home - Mannschaft - Übersicht
+
+![Login](./../Diagramme/Mockups/Home - Mannschaft - Übersicht.png)
+
+#### Home - Mannschaft - Bewertung
+
+![Login](./../Diagramme/Mockups/Home - Mannschaft - Bewertung.png)
+
+#### Home - Planer 
+
+![Login](./../Diagramme/Mockups/Home - Planer.png)
+
+#### Home - Planer - Datenbank - Informationen
+
+![Login](./../Diagramme/Mockups/Home - Planer - Datenbank - Informationen.png)
+
+#### Home - Planer - Datenbank - Kommentieren
+
+![Login](./../Diagramme/Mockups/Home - Planer - Datenbank - Kommentieren.png)
+
+#### Übergangsdiagramm
+
+![Übergänge Mockups](./../Diagramme/Mockups/Ablauf.png)
+
+### Mobile
+
+#### Login
+
+![Login](./../Diagramme/Mockups/Mobile/1_LoginView.png)
+
+#### Register
+
+![Login](./../Diagramme/Mockups/Mobile/2_RegisterView.png)
+
+#### Home Mannschaften
+
+![Login](./../Diagramme/Mockups/Mobile/3_MannschaftenView1.png)
+
+#### Mannschaften Statistik
+
+![Login](./../Diagramme/Mockups/Mobile/5_MannschaftenView2.1.png)
+
+#### Planer 
+
+![Login](./../Diagramme/Mockups/Mobile/7_TrainingsplanerView1.1.png)
+
+#### Übungsview
+
+![Login](./../Diagramme/Mockups/Mobile/8_TrainingsplanerView1.2.png)
+
+#### Übergangsdiagramm
+
+![Übergänge Mockups](./../Diagramme/Mockups/Mobile/Zustandsdiagramm - Navigation.png)
+
 ## 2.5 Anforderungen im Detail
+
     - User Stories mit Akzeptanzkritierien 
     - Optional: Name (oder ID) und Prioritдt ("Must", "Should", "Could", "Won't")
     - Strukturierung der User Stories in funktionale Gruppen
@@ -178,7 +247,18 @@ Prüfbarkeit |-|-|X|-
     - Aktivitätsdiagramme für relevante Use Cases
     - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
+### Spieler bewerten
+
+![Spieler bewerten Aktivitätsdiagramm](./../Diagramme/Aktivitätsdiagramme/SpielerBewerten.png)
+
+### Übung zeichnen
+
+![ÜbungZeichnen Aktivitätsdiagramm](./../Diagramme/Aktivitätsdiagramme/ÜbungZeichnen.png)
+
+
+
 ## 3.6 Entwurf
+
     - Detaillierte UML-Diagramme für relevante Softwarebausteine
 
 ### Enums

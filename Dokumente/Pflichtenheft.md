@@ -406,7 +406,7 @@ Anforderung für die Software ist, dass die Tests durchlaufen.
 | Softwarebaustein | Person(en) |
 |----------|-----------|
 | Web-Frontend | Dario Leunig |
-| Mobile-Frontend |  |
+| Mobile-Frontend | Nikolai Kloss |
 | Backend | Alexander Heinisch |
 | Authentifizierung | Pascal Turon |
 | Continuous Integration | Alexander Bergmann |
@@ -432,7 +432,7 @@ Implementiert Tools und Umgebungen für die Einhaltung einer kontinuierlichen En
 | Name     | Rolle     |
 |----------|-----------|
 | Dario Leunig | Frontend-Entwickler |
-|  | Frontend-Entwickler |
+| Nikolai Kloss | Frontend-Entwickler |
 | Patrick Poppe | Frontend-Entwickler |
 | Pascal Turon | Backend-Entwickler |
 | Alexander-Heinisch | Backend-Entwickler |

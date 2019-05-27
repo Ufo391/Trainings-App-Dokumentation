@@ -12,7 +12,7 @@
 
 Projektname: Coacher
 
-Coacher soll ein Verwaltungstool von Fußballmanschaften für Trainer sein. Der Trainer kann seine Mannschaft anlegen und die Spieler verwalten (Name, Nummer, Merkmale, Notizen, Entwicklung) und bewerten. Ebenfalls kann der Trainer Trainingseinheiten anlegen. Für diese kann er auf vorhandene Übungen zurückgreifen oder selber neue zeichnen. Diese Übungen sind kommentierbar (Schwierigkeit, Schwerpunkt, Anmerkungen).  Die Trainingseinheit setzt der Trainer dann aus verschiedenen Übungen zusammen. 
+Coacher soll ein Verwaltungstool von Fußballmanschaften für Trainer sein. Der Trainer kann seine Mannschaft anlegen und die Spieler verwalten (Name, Nummer, Merkmale, Notizen, Entwicklung) und bewerten. Ebenfalls kann der Trainer Trainingseinheiten anlegen. Für diese kann er auf vorhandene Übungen zurückgreifen oder selber neue zeichnen. Diese Übungen sind kommentierbar (Schwierigkeit, Schwerpunkt, Anmerkungen).  
 
 Übungen können veröffentlicht werden und von anderen Trainern genutzt werden. Andere Trainer können die Übung kommentieren und bewerten. 
 
@@ -231,19 +231,28 @@ Prüfbarkeit |-|-|X|-
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
     - Kommunikationsprotokolle, Datenformate
 
+![Systemarchitekturdiagramm](./../Diagramme/SystemArchitektur.png)
+
 ## 3.2 Softwarearchitektur
+
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
 ## 3.3 Schnittstellen
     - Schnittstellenbeschreibung
     - Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
 
+<https://app.swaggerhub.com/apis/AHeinisch/trainingsplaner/1.0.0>
+
 ## 3.4 Datenmodell 
+
     - Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomäne)
     - Modellierung des physikalischen Datenmodells 
       - RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
+![Datenmodell](../Diagramme/Modelklassendiagramm.png)
+
 ## 3.5 Abläufe
+
     - Aktivitätsdiagramme für relevante Use Cases
     - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
 
@@ -377,24 +386,36 @@ __Team.Liga__
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-    - Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhдngigkeiten
+    - Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-    - Aufteilung in Git-Repositories gemдя Software- und Systemarchitektur und Softwarebbausteinen 
-    - Einschrдnkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-    - Interne Qualitдtsanforderungen (z.B. Softwarequalitдtsmerkmale wie z.B. Erweiterbarkeit)
+    - Aufteilung in Git-Repositories gemäß Software- und Systemarchitektur und Softwarebbausteinen 
+    - Einschrдäkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
+    - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+
+Die Anwendung ist Stand-Alone, das heißt in diesem Zusammenhang, dass keine weiteren Apps oder Anwendungen benötigt werden. Das Web-Frontend soll in Angular programmiert werden. Das mobile Frontend basiert auf Angular, wird allerdings über Ionic programmiert. In beiden Frontends wird State-Managment über Ngrx gelöst.
+
+Das Backend basiert auf .NetCore und ist in C# programmiert. Die Datenbank ist in MySQL erstellt.
+
+Anforderung für die Software ist, dass die Tests durchlaufen.
 
 ## 4.2 Verantwortlichkeiten
+
     - Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
     - Rollendefinition und Zuordnung
 
 | Softwarebaustein | Person(en) |
 |----------|-----------|
-| Komponente A | Thomas Mustermann |
+| Web-Frontend | Dario Leunig |
+| Mobile-Frontend |  |
+| Backend | Alexander Heinisch |
+| Authentifizierung | Pascal Turon |
+| Continuous Integration | Alexander Bergmann |
+| State Managment | Patrick Poppe |
 
 ### Rollen
 
 #### Softwarearchitekt
-Entwirft den Aufbau von Softwaresystemen und trifft Entscheidungen ьber das Zusammenspiel der Softwarebausteine.
+Entwirft den Aufbau von Softwaresystemen und trifft Entscheidungen über das Zusammenspiel der Softwarebausteine.
 
 #### Frontend-Entwickler
 Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung.
@@ -402,11 +423,20 @@ Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layou
 #### Backend-Entwickler
 Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse Datenquellen und externe Dienste integriert und fьr die Anwendung bereitgestellt.
 
+#### Infrastrukturmanager
+
+Implementiert Tools und Umgebungen für die Einhaltung einer kontinuierlichen Entwicklung
+
 ### Rollenzuordnung
 
 | Name     | Rolle     |
 |----------|-----------|
-| Thomas Mustermann | Softwarearchitekt |
+| Dario Leunig | Frontend-Entwickler |
+|  | Frontend-Entwickler |
+| Patrick Poppe | Frontend-Entwickler |
+| Pascal Turon | Backend-Entwickler |
+| Alexander-Heinisch | Backend-Entwickler |
+| Alexander Bergamnn | Infrastrukturmanagers |
 
 
 ## 4.3 Grober Projektplan
@@ -426,10 +456,10 @@ Implementiert die funktionale Logik der Anwendung. Hierbei werden zudem diverse 
 # 5 Anhänge
 
 ## 5.1 Glossar 
-    - Definitionen, Abkьrzungen, Begriffe
+    - Definitionen, Abkürzungen, Begriffe
 
 ## 5.2 Referenzen
-    - Handbьcher, Gesetze
+    - Handbücher, Gesetze
 
 ## 5.3 Index
 

@@ -112,27 +112,27 @@ Prüfbarkeit |-|-|X|-
 
 #### Home Mannschaften
 
-![Login](./../Diagramme/Mockups/Home - Mannschaft.png)
+![Login](./../Diagramme/Mockups/Home-Mannschaft.png)
 
 #### Home - Mannschaft - Übersicht
 
-![Login](./../Diagramme/Mockups/Home - Mannschaft - Übersicht.png)
+![Login](./../Diagramme/Mockups/Home-Mannschaft-Übersicht.png)
 
 #### Home - Mannschaft - Bewertung
 
-![Login](./../Diagramme/Mockups/Home - Mannschaft - Bewertung.png)
+![Login](./../Diagramme/Mockups/Home-Mannschaft-Bewertung.png)
 
 #### Home - Planer 
 
-![Login](./../Diagramme/Mockups/Home - Planer.png)
+![Login](./../Diagramme/Mockups/Home-Planer.png)
 
 #### Home - Planer - Datenbank - Informationen
 
-![Login](./../Diagramme/Mockups/Home - Planer - Datenbank - Informationen.png)
+![Login](./../Diagramme/Mockups/Home-Planer-Datenbank-Informationen.png)
 
 #### Home - Planer - Datenbank - Kommentieren
 
-![Login](./../Diagramme/Mockups/Home - Planer - Datenbank - Kommentieren.png)
+![Login](./../Diagramme/Mockups/Home-Planer-Datenbank-Kommentieren.png)
 
 #### Übergangsdiagramm
 
@@ -241,7 +241,7 @@ Prüfbarkeit |-|-|X|-
     - Schnittstellenbeschreibung
     - Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
 
-<https://app.swaggerhub.com/apis/AHeinisch/trainingsplaner/1.0.0>
+<https://app.swaggerhub.com/apis/AHeinisch/trainingsplaner/>
 
 ## 3.4 Datenmodell 
 
@@ -445,7 +445,6 @@ Implementiert Tools und Umgebungen für die Einhaltung einer kontinuierlichen En
 ### Meilensteine
 * KW 22 - Abgabe MVP
   * Anmeldung funktioniert
-  * Training kann gezeichnet werden
   * Browser, IOS, Android	
 * KW 26 - Valides Produkt
   * Use Cases  umgesetzt

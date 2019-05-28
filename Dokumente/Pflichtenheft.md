@@ -166,7 +166,7 @@ Prüfbarkeit |-|-|X|-
 
 #### Übergangsdiagramm
 
-![Übergänge Mockups](./../Diagramme/Mockups/Mobile/Zustandsdiagramm - Navigation.png)
+![Übergänge Mockups](./../Diagramme/Mockups/Mobile/Zustandsdiagramm-Navigation.png)
 
 ## 2.5 Anforderungen im Detail
 

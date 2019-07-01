@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>657</x>
-      <y>99</y>
+      <x>459</x>
+      <y>153</y>
       <w>171</w>
       <h>117</h>
     </coordinates>
@@ -23,19 +23,20 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>909</x>
-      <y>279</y>
+      <x>711</x>
+      <y>333</y>
       <w>171</w>
       <h>144</h>
     </coordinates>
     <panel_attributes>Spieler
 -
-+Date Geburtstag
 +String Name
++Date Geburtstag
 +String Notiz
 +Boolean IstFrau
-+List&lt;Team&gt; Teams
++Integer TrikotNummer
 +Adresse Adresse
++List&lt;Team&gt; Teams
 -
 </panel_attributes>
     <additional_attributes/>
@@ -43,18 +44,18 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>423</x>
-      <y>279</y>
+      <x>225</x>
+      <y>333</y>
       <w>171</w>
       <h>144</h>
     </coordinates>
     <panel_attributes>Trainer
 -
 +String Name
-+String EMailAdresse
-+String Passwort
++String EMail
 +ENUM Lizenz
 +Date Geburtstag
++string FirebaseID
 +List&lt;Team&gt; Teams
 +List&lt;Uebung&gt; Uebungen
 -
@@ -64,8 +65,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>666</x>
-      <y>279</y>
+      <x>468</x>
+      <y>333</y>
       <w>171</w>
       <h>135</h>
     </coordinates>
@@ -83,10 +84,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>387</x>
-      <y>513</y>
+      <x>189</x>
+      <y>567</y>
       <w>225</w>
-      <h>135</h>
+      <h>153</h>
     </coordinates>
     <panel_attributes>Uebung
 -
@@ -96,6 +97,7 @@
 +Integer MinimaleTeilnehmer
 +Boolean IstOeffentlich
 +List&lt;Uebungselement&gt; UeElemente
++List&lt;Kommentar&gt; Kommentare
 -
 </panel_attributes>
     <additional_attributes/>
@@ -103,8 +105,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>405</x>
-      <y>729</y>
+      <x>207</x>
+      <y>783</y>
       <w>189</w>
       <h>108</h>
     </coordinates>
@@ -120,12 +122,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1143</x>
-      <y>279</y>
+      <x>945</x>
+      <y>333</y>
       <w>171</w>
       <h>144</h>
     </coordinates>
-    <panel_attributes>Adresse
+    <panel_attributes>Kontakt
 -
 +String Strassenname
 +String Hausnummer
@@ -139,8 +141,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1071</x>
-      <y>342</y>
+      <x>873</x>
+      <y>396</y>
       <w>90</w>
       <h>36</h>
     </coordinates>
@@ -152,8 +154,8 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>828</x>
-      <y>342</y>
+      <x>630</x>
+      <y>396</y>
       <w>99</w>
       <h>36</h>
     </coordinates>
@@ -165,21 +167,21 @@ m2=m</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>495</x>
-      <y>639</y>
+      <x>297</x>
+      <y>711</y>
       <w>36</w>
-      <h>108</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1
 m2=m</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>495</x>
-      <y>414</y>
+      <x>297</x>
+      <y>468</y>
       <w>63</w>
       <h>117</h>
     </coordinates>
@@ -192,8 +194,8 @@ erstellt</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>126</y>
+      <x>621</x>
+      <y>180</y>
       <w>234</w>
       <h>171</h>
     </coordinates>
@@ -206,8 +208,8 @@ gehört</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>495</x>
-      <y>117</y>
+      <x>297</x>
+      <y>171</y>
       <w>180</w>
       <h>180</h>
     </coordinates>
@@ -220,8 +222,8 @@ erzeugt</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
-      <y>342</y>
+      <x>387</x>
+      <y>396</y>
       <w>99</w>
       <h>36</h>
     </coordinates>
@@ -229,5 +231,48 @@ erzeugt</panel_attributes>
 m1=n
 m2=m</panel_attributes>
     <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>477</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Kommentar
+-
++Date Datum
++String Text
+-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>99</x>
+      <y>396</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=m
+m2=1</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>99</x>
+      <y>549</y>
+      <w>108</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=m
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;100.0;90.0</additional_attributes>
   </element>
 </diagram>
